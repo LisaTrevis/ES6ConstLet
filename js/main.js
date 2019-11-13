@@ -7,7 +7,12 @@
 // Const variables are usually written in all caps,
 // i.e. const AGE = 27;
 
+// HOISTING no longer works with let and const, so a variable needs to be declared before it can be used
+
 // Var is no longer needed but exists for backwards compatability
+
+// Var is no longer needed
+
 
 // Prior to ES6:
 
@@ -76,3 +81,24 @@
 //     message = statuses[i].response;
 //   }
 // }
+
+// ********************************* //
+// ********************************* //
+
+// ES6 Maximilian Schwartzmuller
+
+// const AGES = [25, 27, 29]
+// console.log(AGES) // returns original array
+
+// AGES.push(32)
+// console.log(AGES) // returns new array because AGES points to data in memory, which we can manupulate. But we AREN'T assigning the "pointer" to a new value or location in memory.
+
+// const OBJ = {
+// 	age: 42
+// }
+
+// console.log(OBJ)
+
+// OBJ.age = 32
+
+// console.log(OBJ)
